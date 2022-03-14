@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov  1 22:33:52 2021
+# Process ID: 34260
+# Current directory: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13944 C:\Users\polit\Documents\n10489045, N10485571  - FIR Filter Vivado and bit file\06_demo_all_2021\06_demo_all.xpr
+# Log file: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/vivado.log
+# Journal file: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021'
+INFO: [Project 1-313] Project file moved from 'C:/Users/polit/Downloads/06_demo_all_2021' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 1133.730 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/synth_1
+
+reset_run mem_oled_char_lib_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/mem_oled_char_lib_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_oled_char_lib'...
+[Mon Nov  1 22:34:21 2021] Launched mem_oled_char_lib_synth_1, synth_1...
+Run output will be captured here:
+mem_oled_char_lib_synth_1: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/mem_oled_char_lib_synth_1/runme.log
+synth_1: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/synth_1/runme.log
+[Mon Nov  1 22:34:22 2021] Launched impl_1...
+Run output will be captured here: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1341.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 350 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.403 . Memory (MB): peak = 2022.715 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.403 . Memory (MB): peak = 2022.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2022.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2207.727 ; gain = 1038.535
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  1 22:38:39 2021...

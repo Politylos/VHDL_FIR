@@ -1,0 +1,548 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Oct 21 14:49:29 2021
+# Process ID: 32876
+# Current directory: C:/Users/polit/Downloads/06_demo_all_2021
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16080 C:\Users\polit\Downloads\06_demo_all_2021\06_demo_all.xpr
+# Log file: C:/Users/polit/Downloads/06_demo_all_2021/vivado.log
+# Journal file: C:/Users/polit/Downloads/06_demo_all_2021\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.xpr
+INFO: [Project 1-313] Project file moved from 'D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1133.578 ; gain = 0.000
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/polit/Downloads/06_demo_all_2021/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mem_oled_char_lib'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_oled_char_lib'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mem_oled_char_lib'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mem_oled_char_lib'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mem_oled_char_lib'...
+export_ip_user_files -of_objects [get_files C:/Users/polit/Downloads/06_demo_all_2021/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/polit/Downloads/06_demo_all_2021/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci] -directory C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.ip_user_files -ipstatic_source_dir C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/modelsim} {questa=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/questa} {riviera=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/riviera} {activehdl=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/mem_oled_char_lib.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/charLib.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/i_file_001.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/xadc_in.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/polit/Downloads/06_demo_all_2021/src_ip/mem_oled_char_lib/sim/mem_oled_char_lib.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_oled_char_lib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/polit/Downloads/06_demo_all_2021/src_ip/xadc_wiz_0/xadc_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xadc_wiz_0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/polit/Downloads/06_demo_all_2021/src_ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/polit/Downloads/06_demo_all_2021/src_tb/bfm_i2c_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bfm_i2c_slave
+INFO: [VRFC 10-2458] undeclared symbol SDA_shadow, assumed default net type wire [C:/Users/polit/Downloads/06_demo_all_2021/src_tb/bfm_i2c_slave.sv:28]
+INFO: [VRFC 10-2458] undeclared symbol start_or_stop, assumed default net type wire [C:/Users/polit/Downloads/06_demo_all_2021/src_tb/bfm_i2c_slave.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/polit/Downloads/06_demo_all_2021/src_tb/bfm_uart.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bfm_uart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/polit/Downloads/06_demo_all_2021/src_tb/tb_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/glbl.v:6]
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/pmod_oled/Delay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Delay'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/pmod_oled/OledInit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'OledInit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/pmod_oled/OledUser.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'OledUser'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/pmod_oled/PmodOLEDCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PmodOLEDCtrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/pmod_oled/SpiCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SpiCtrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/clk_prescaler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_prescaler'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/fifo_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/data_processing_input.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_processing_input'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/pipeline.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pipeline'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/my_FIR_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'my_FIR_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/my_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'my_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/data_processing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data_processing'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/dbg_pwm_out.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dbg_pwm_out'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/i2c/i2c_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c_master'
+WARNING: [VRFC 10-471] case choice must be a locally static expression [C:/Users/polit/Downloads/06_demo_all_2021/src/i2c/i2c_master.vhd:87]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [C:/Users/polit/Downloads/06_demo_all_2021/src/i2c/i2c_master.vhd:90]
+WARNING: [VRFC 10-471] case choice must be a locally static expression [C:/Users/polit/Downloads/06_demo_all_2021/src/i2c/i2c_master.vhd:93]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/i2c/i2c_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/spi/spi_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'spi_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/spi/spi_wrapper_1x.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'spi_wrapper_1x'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/spi/spi_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'spi_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/uart/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/uart/uart_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/uart/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/fpga_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fpga_top'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+"xelab -wto e6a4e5df04c94149963ef0c159be1529 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e6a4e5df04c94149963ef0c159be1529 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'pmod_cs' is not connected on this instance [C:/Users/polit/Downloads/06_demo_all_2021/src_tb/tb_top.sv:22]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.math_real
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.0,C...
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.clk_prescaler [\clk_prescaler(prescaler=100)\]
+Compiling architecture behavioral of entity xil_defaultlib.clk_prescaler [\clk_prescaler(prescaler=1000)\]
+Compiling architecture logic of entity xil_defaultlib.i2c_master [\i2c_master(input_clk=100000000,...]
+Compiling architecture logic of entity xil_defaultlib.i2c_wrapper [\i2c_wrapper(input_clk=100000000...]
+Compiling module unisims_ver.IBUF(CAPACITANCE="DONT_CARE",IBU...
+Compiling architecture rtl of entity xil_defaultlib.spi_master [spi_master_default]
+Compiling architecture rtl of entity xil_defaultlib.spi_wrapper_1x [spi_wrapper_1x_default]
+Compiling architecture rtl of entity xil_defaultlib.spi_controller [spi_controller_default]
+Compiling architecture rtl of entity xil_defaultlib.fifo_ram [fifo_ram_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_tx [\uart_tx(g_baud_rate=115200)\]
+Compiling architecture rtl of entity xil_defaultlib.uart_rx [\uart_rx(g_baud_rate=115200)\]
+Compiling architecture rtl of entity xil_defaultlib.uart [\uart(g_baud_rate=115200)\]
+Compiling architecture rtl of entity xil_defaultlib.data_processing_input [\data_processing_input(g_data_wi...]
+Compiling architecture rtl of entity xil_defaultlib.pipeline [\pipeline(g_data_width=8)\]
+Compiling architecture behav of entity xil_defaultlib.my_FIR_filter [\my_FIR_filter(g_data_width=8)\]
+Compiling architecture rtl of entity xil_defaultlib.my_filter [\my_filter(g_data_width=8)\]
+Compiling architecture rtl of entity xil_defaultlib.data_processing [\data_processing(g_data_width=8)...]
+Compiling module unisims_ver.XADC(INIT_40=16'b011,INIT_41=16'...
+Compiling module xil_defaultlib.xadc_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.dbg_pwm_out [\dbg_pwm_out(g_input_bits=12)\]
+Compiling architecture behavioral of entity xil_defaultlib.SpiCtrl [spictrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.Delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.OledInit [oledinit_default]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.mem_oled_char_lib
+Compiling architecture behavioral of entity xil_defaultlib.OledUser [oleduser_default]
+Compiling architecture behavioral of entity xil_defaultlib.PmodOLEDCtrl [\PmodOLEDCtrl(g_in_sim=1)\]
+Compiling architecture rtl of entity xil_defaultlib.fpga_top [\fpga_top(g_in_sim=1)\]
+Compiling module unisims_ver.BUF
+Compiling module xil_defaultlib.bfm_i2c_slave(I2C_ADR=7'b1010000...
+Compiling module xil_defaultlib.bfm_uart
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Oct 21 14:50:48 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 21 14:50:48 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1133.578 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_dut.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_spi.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_xadc.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_oled.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/EGH449_prac03.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_filter.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_dut.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_spi.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_xadc.wcfg
+WARNING: Simulation object /tb_top/dut/PM_XADC/FLOAT_VCCAUX was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/FLOAT_VCCINT was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/FLOAT_TEMP was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/GND_BIT was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/GND_BUS3 was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/aux_channel_p was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/aux_channel_n was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/alm_int was not found in the design.
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_oled.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/EGH449_prac03.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_filter.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.dut.PM_OLED.PM_UserDisp.PM_CHAR_LIB_COMP.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+TEST STARTED
+1000 Reading... i_file_001.txt
+1000 tb_top.bfm_uart.file_input_send 0x00
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x00
+1000 tb_top.bfm_uart.file_input_send 0x01
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x01
+1000 tb_top.bfm_uart.file_input_send 0x02
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x02
+1000 tb_top.bfm_uart.file_input_send 0x03
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x03
+1000 tb_top.bfm_uart.file_input_send 0x04
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x04
+1000 tb_top.bfm_uart.file_input_send 0x05
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x05
+1000 tb_top.bfm_uart.file_input_send 0x06
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x06
+1000 tb_top.bfm_uart.file_input_send 0x07
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x07
+1000 tb_top.bfm_uart.file_input_send 0x08
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x08
+1000 tb_top.bfm_uart.file_input_send 0x09
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x09
+1000 tb_top.bfm_uart.file_input_send 0x0a
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0a
+1000 tb_top.bfm_uart.file_input_send 0x0b
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0b
+1000 tb_top.bfm_uart.file_input_send 0x0c
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0c
+1000 tb_top.bfm_uart.file_input_send 0x0d
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0d
+1000 tb_top.bfm_uart.file_input_send 0x0e
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0e
+1000 tb_top.bfm_uart.file_input_send 0x0f
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0f
+1000 tb_top.bfm_uart.file_input_send 0x00
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x00
+1000 tb_top.bfm_uart.file_input_send 0x01
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x01
+1000 tb_top.bfm_uart.file_input_send 0x02
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x02
+1000 tb_top.bfm_uart.file_input_send 0x03
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x03
+1000 tb_top.bfm_uart.file_input_send 0x04
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x04
+1000 tb_top.bfm_uart.file_input_send 0x05
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x05
+1000 tb_top.bfm_uart.file_input_send 0x06
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x06
+1000 tb_top.bfm_uart.file_input_send 0x07
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x07
+1000 tb_top.bfm_uart.file_input_send 0x08
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x08
+1000 tb_top.bfm_uart.file_input_send 0x09
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x09
+1000 tb_top.bfm_uart.file_input_send 0x0a
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0a
+1000 tb_top.bfm_uart.file_input_send 0x0b
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0b
+1000 tb_top.bfm_uart.file_input_send 0x0c
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0c
+1000 tb_top.bfm_uart.file_input_send 0x0d
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0d
+1000 tb_top.bfm_uart.file_input_send 0x0e
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0e
+1000 tb_top.bfm_uart.file_input_send 0x0f
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0f
+1000 tb_top.bfm_uart.file_input_send 0x00
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x00
+1000 tb_top.bfm_uart.file_input_send 0x01
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x01
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1133.578 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 1133.578 ; gain = 0.000
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2223.211 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/mem_oled_char_lib.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/charLib.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/i_file_001.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/xadc_in.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_top_vlog.prj"
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+"xelab -wto e6a4e5df04c94149963ef0c159be1529 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e6a4e5df04c94149963ef0c159be1529 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'pmod_cs' is not connected on this instance [C:/Users/polit/Downloads/06_demo_all_2021/src_tb/tb_top.sv:22]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_dut.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_spi.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_xadc.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_oled.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/EGH449_prac03.wcfg} -view {C:/Users/polit/Downloads/06_demo_all_2021/tb_filter.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_dut.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_spi.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_xadc.wcfg
+WARNING: Simulation object /tb_top/dut/PM_XADC/FLOAT_VCCAUX was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/FLOAT_VCCINT was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/FLOAT_TEMP was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/GND_BIT was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/GND_BUS3 was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/aux_channel_p was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/aux_channel_n was not found in the design.
+WARNING: Simulation object /tb_top/dut/PM_XADC/alm_int was not found in the design.
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_oled.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/EGH449_prac03.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_filter.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.dut.PM_OLED.PM_UserDisp.PM_CHAR_LIB_COMP.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+TEST STARTED
+1000 Reading... i_file_001.txt
+1000 tb_top.bfm_uart.file_input_send 0x00
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x00
+1000 tb_top.bfm_uart.file_input_send 0x01
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x01
+1000 tb_top.bfm_uart.file_input_send 0x02
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x02
+1000 tb_top.bfm_uart.file_input_send 0x03
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x03
+1000 tb_top.bfm_uart.file_input_send 0x04
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x04
+1000 tb_top.bfm_uart.file_input_send 0x05
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x05
+1000 tb_top.bfm_uart.file_input_send 0x06
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x06
+1000 tb_top.bfm_uart.file_input_send 0x07
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x07
+1000 tb_top.bfm_uart.file_input_send 0x08
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x08
+1000 tb_top.bfm_uart.file_input_send 0x09
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x09
+1000 tb_top.bfm_uart.file_input_send 0x0a
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0a
+1000 tb_top.bfm_uart.file_input_send 0x0b
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0b
+1000 tb_top.bfm_uart.file_input_send 0x0c
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0c
+1000 tb_top.bfm_uart.file_input_send 0x0d
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0d
+1000 tb_top.bfm_uart.file_input_send 0x0e
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0e
+1000 tb_top.bfm_uart.file_input_send 0x0f
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0f
+1000 tb_top.bfm_uart.file_input_send 0x00
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x00
+1000 tb_top.bfm_uart.file_input_send 0x01
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x01
+1000 tb_top.bfm_uart.file_input_send 0x02
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x02
+1000 tb_top.bfm_uart.file_input_send 0x03
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x03
+1000 tb_top.bfm_uart.file_input_send 0x04
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x04
+1000 tb_top.bfm_uart.file_input_send 0x05
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x05
+1000 tb_top.bfm_uart.file_input_send 0x06
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x06
+1000 tb_top.bfm_uart.file_input_send 0x07
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x07
+1000 tb_top.bfm_uart.file_input_send 0x08
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x08
+1000 tb_top.bfm_uart.file_input_send 0x09
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x09
+1000 tb_top.bfm_uart.file_input_send 0x0a
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0a
+1000 tb_top.bfm_uart.file_input_send 0x0b
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0b
+1000 tb_top.bfm_uart.file_input_send 0x0c
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0c
+1000 tb_top.bfm_uart.file_input_send 0x0d
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0d
+1000 tb_top.bfm_uart.file_input_send 0x0e
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0e
+1000 tb_top.bfm_uart.file_input_send 0x0f
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x0f
+1000 tb_top.bfm_uart.file_input_send 0x00
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x00
+1000 tb_top.bfm_uart.file_input_send 0x01
+tb_top.bfm_uart.uart_tx 1000 UART TX add : 0x01
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2223.211 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 2223.211 ; gain = 0.000
+run 10000 us
+87800 tb_top.bfm_uart.file_input_send 0x02
+tb_top.bfm_uart.uart_tx 87800 UART TX add : 0x02
+tb_top.bfm_uart 166115 UART RX : 0x00
+174600 tb_top.bfm_uart.file_input_send 0x03
+tb_top.bfm_uart.uart_tx 174600 UART TX add : 0x03
+tb_top.bfm_uart 252955 UART RX : 0x01
+261400 tb_top.bfm_uart.file_input_send 0x04
+tb_top.bfm_uart.uart_tx 261400 UART TX add : 0x04
+tb_top.bfm_uart 339795 UART RX : 0x02
+348200 tb_top.bfm_uart.file_input_send 0x05
+tb_top.bfm_uart.uart_tx 348200 UART TX add : 0x05
+tb_top.bfm_uart 426635 UART RX : 0x03
+435000 tb_top.bfm_uart.file_input_send 0x06
+tb_top.bfm_uart.uart_tx 435000 UART TX add : 0x06
+tb_top.bfm_uart 513475 UART RX : 0x04
+521800 tb_top.bfm_uart.file_input_send 0x07
+tb_top.bfm_uart.uart_tx 521800 UART TX add : 0x07
+tb_top.bfm_uart 600315 UART RX : 0x05
+608600 tb_top.bfm_uart.file_input_send 0x08
+tb_top.bfm_uart.uart_tx 608600 UART TX add : 0x08
+tb_top.bfm_uart 687155 UART RX : 0x06
+695400 tb_top.bfm_uart.file_input_send 0x09
+tb_top.bfm_uart.uart_tx 695400 UART TX add : 0x09
+tb_top.bfm_uart 773995 UART RX : 0x07
+782200 tb_top.bfm_uart.file_input_send 0x0a
+tb_top.bfm_uart.uart_tx 782200 UART TX add : 0x0a
+tb_top.bfm_uart 860835 UART RX : 0x08
+869000 tb_top.bfm_uart.file_input_send 0x0b
+tb_top.bfm_uart.uart_tx 869000 UART TX add : 0x0b
+tb_top.bfm_uart 947675 UART RX : 0x09
+955800 tb_top.bfm_uart.file_input_send 0x0c
+tb_top.bfm_uart.uart_tx 955800 UART TX add : 0x0c
+tb_top.bfm_uart 1.03452e+06 UART RX : 0x0a
+1.0426e+06 tb_top.bfm_uart.file_input_send 0x0d
+tb_top.bfm_uart.uart_tx 1.0426e+06 UART TX add : 0x0d
+tb_top.bfm_uart 1.12136e+06 UART RX : 0x0b
+1.1294e+06 tb_top.bfm_uart.file_input_send 0x0e
+tb_top.bfm_uart.uart_tx 1.1294e+06 UART TX add : 0x0e
+tb_top.bfm_uart 1.2082e+06 UART RX : 0x0c
+1.2162e+06 tb_top.bfm_uart.file_input_send 0x0f
+tb_top.bfm_uart.uart_tx 1.2162e+06 UART TX add : 0x0f
+tb_top.bfm_uart 1.29504e+06 UART RX : 0x0d
+1.303e+06 tb_top.bfm_uart.file_input_send 0x00
+tb_top.bfm_uart.uart_tx 1.303e+06 UART TX add : 0x00
+tb_top.bfm_uart 1.38188e+06 UART RX : 0x0e
+1.3898e+06 tb_top.bfm_uart.file_input_send 0x01
+tb_top.bfm_uart.uart_tx 1.3898e+06 UART TX add : 0x01
+tb_top.bfm_uart 1.46872e+06 UART RX : 0x0f
+1.4766e+06 tb_top.bfm_uart.file_input_send 0x02
+tb_top.bfm_uart.uart_tx 1.4766e+06 UART TX add : 0x02
+tb_top.bfm_uart 1.55556e+06 UART RX : 0x00
+1.5634e+06 tb_top.bfm_uart.file_input_send 0x03
+tb_top.bfm_uart.uart_tx 1.5634e+06 UART TX add : 0x03
+tb_top.bfm_uart 1.6424e+06 UART RX : 0x01
+1.6502e+06 tb_top.bfm_uart.file_input_send 0x04
+tb_top.bfm_uart.uart_tx 1.6502e+06 UART TX add : 0x04
+tb_top.bfm_uart 1.72924e+06 UART RX : 0x02
+1.737e+06 tb_top.bfm_uart.file_input_send 0x05
+tb_top.bfm_uart.uart_tx 1.737e+06 UART TX add : 0x05
+tb_top.bfm_uart 1.81608e+06 UART RX : 0x03
+1.8238e+06 tb_top.bfm_uart.file_input_send 0x06
+tb_top.bfm_uart.uart_tx 1.8238e+06 UART TX add : 0x06
+tb_top.bfm_uart 1.90292e+06 UART RX : 0x04
+1.9106e+06 tb_top.bfm_uart.file_input_send 0x07
+tb_top.bfm_uart.uart_tx 1.9106e+06 UART TX add : 0x07
+tb_top.bfm_uart 1.98976e+06 UART RX : 0x05
+1.9974e+06 tb_top.bfm_uart.file_input_send 0x08
+tb_top.bfm_uart.uart_tx 1.9974e+06 UART TX add : 0x08
+tb_top.bfm_uart 2.0766e+06 UART RX : 0x06
+2.0842e+06 tb_top.bfm_uart.file_input_send 0x09
+tb_top.bfm_uart.uart_tx 2.0842e+06 UART TX add : 0x09
+tb_top.bfm_uart 2.16344e+06 UART RX : 0x07
+2.171e+06 tb_top.bfm_uart.file_input_send 0x0a
+tb_top.bfm_uart.uart_tx 2.171e+06 UART TX add : 0x0a
+tb_top.bfm_uart 2.25028e+06 UART RX : 0x08
+2.2578e+06 tb_top.bfm_uart.file_input_send 0x0b
+tb_top.bfm_uart.uart_tx 2.2578e+06 UART TX add : 0x0b
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2223.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 21 15:54:32 2021...

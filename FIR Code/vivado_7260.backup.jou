@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Sep  5 01:07:15 2021
+# Process ID: 7260
+# Current directory: D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12452 D:\FPGA_2021\2021_code_base\06_demo_all_2021\06_demo_all_2021\06_demo_all.xpr
+# Log file: D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021/vivado.log
+# Journal file: D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021/06_demo_all.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+reset_run synth_1

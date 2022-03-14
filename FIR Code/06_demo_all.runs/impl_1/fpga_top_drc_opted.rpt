@@ -1,0 +1,201 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Nov  1 22:36:00 2021
+| Host         : LAPTOP-EMHK0KK9 running 64-bit major release  (build 9200)
+| Command      : report_drc -file fpga_top_drc_opted.rpt -pb fpga_top_drc_opted.pb -rpx fpga_top_drc_opted.rpx
+| Design       : fpga_top
+| Device       : xc7a35ticsg324-1L
+| Speed File   : -1L
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 31
++---------+----------+---------------------------------+------------+
+| Rule    | Severity | Description                     | Violations |
++---------+----------+---------------------------------+------------+
+| DPIP-1  | Warning  | Input pipelining                | 26         |
+| DPOP-1  | Warning  | PREG Output pipelining          | 1          |
+| DPOP-2  | Warning  | MREG Output pipelining          | 2          |
+| PLCK-12 | Warning  | Clock Placer Checks             | 1          |
+| RPBF-3  | Warning  | IO port buffering is incomplete | 1          |
++---------+----------+---------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/M[0] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/M[0]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[10].Q_array_reg[10] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[10].Q_array_reg[10]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[11].Q_array_reg[11] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[11].Q_array_reg[11]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[12].Q_array_reg[12] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[12].Q_array_reg[12]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[13].Q_array_reg[13] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[13].Q_array_reg[13]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[14].Q_array_reg[14] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[14].Q_array_reg[14]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[15].Q_array_reg[15] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[15].Q_array_reg[15]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[16].Q_array_reg[16] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[16].Q_array_reg[16]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[17].Q_array_reg[17] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[17].Q_array_reg[17]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[18].Q_array_reg[18] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[18].Q_array_reg[18]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[19].Q_array_reg[19] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[19].Q_array_reg[19]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[20].Q_array_reg[20] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[20].Q_array_reg[20]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[21].Q_array_reg[21] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[21].Q_array_reg[21]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[22].Q_array_reg[22] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[22].Q_array_reg[22]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[23].Q_array_reg[23] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[23].Q_array_reg[23]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[24].Q_array_reg[24] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[24].Q_array_reg[24]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[25].Q_array_reg[25] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[25].Q_array_reg[25]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[26].Q_array_reg[26] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[26].Q_array_reg[26]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[2].Q_array_reg[2] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[2].Q_array_reg[2]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[3].Q_array_reg[3] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[3].Q_array_reg[3]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[4].Q_array_reg[4] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[4].Q_array_reg[4]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[5].Q_array_reg[5] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[5].Q_array_reg[5]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[6].Q_array_reg[6] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[6].Q_array_reg[6]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[7].Q_array_reg[7] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[7].Q_array_reg[7]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[8].Q_array_reg[8] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[8].Q_array_reg[8]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[9].Q_array_reg[9] input PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[9].Q_array_reg[9]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/M[0] output PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/M[0]/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/M[0] multiplier stage PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/M[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[26].Q_array_reg[26] multiplier stage PM_DATA_PROCESS/PM_MYFILTER/PM_FILTER_TEST/fIR_fflops[26].Q_array_reg[26]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	rst_n_IBUF_inst (IBUF.O) is locked to C2
+	rst_n_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port I2C_SDA expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

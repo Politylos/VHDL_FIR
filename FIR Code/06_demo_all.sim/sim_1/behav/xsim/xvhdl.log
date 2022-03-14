@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/my_FIR_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'my_FIR_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.srcs/sim_1/new/fir_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fir_test'

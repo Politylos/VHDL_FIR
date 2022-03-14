@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov  1 22:34:25 2021
+# Process ID: 24780
+# Current directory: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/mem_oled_char_lib_synth_1
+# Command line: vivado.exe -log mem_oled_char_lib.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mem_oled_char_lib.tcl
+# Log file: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/mem_oled_char_lib_synth_1/mem_oled_char_lib.vds
+# Journal file: C:/Users/polit/Documents/n10489045, N10485571  - FIR Filter Vivado and bit file/06_demo_all_2021/06_demo_all.runs/mem_oled_char_lib_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mem_oled_char_lib.tcl -notrace

@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Oct 21 14:49:29 2021
+# Process ID: 32876
+# Current directory: C:/Users/polit/Downloads/06_demo_all_2021
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16080 C:\Users\polit\Downloads\06_demo_all_2021\06_demo_all.xpr
+# Log file: C:/Users/polit/Downloads/06_demo_all_2021/vivado.log
+# Journal file: C:/Users/polit/Downloads/06_demo_all_2021\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.xpr
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/polit/Downloads/06_demo_all_2021/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci]
+export_ip_user_files -of_objects [get_files C:/Users/polit/Downloads/06_demo_all_2021/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/polit/Downloads/06_demo_all_2021/src_ip/mem_oled_char_lib/mem_oled_char_lib.xci] -directory C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.ip_user_files -ipstatic_source_dir C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/modelsim} {questa=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/questa} {riviera=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/riviera} {activehdl=C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_dut.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_spi.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_xadc.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_oled.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/EGH449_prac03.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_filter.wcfg
+source tb_top.tcl
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_dut.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_spi.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_xadc.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_oled.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/EGH449_prac03.wcfg
+open_wave_config C:/Users/polit/Downloads/06_demo_all_2021/tb_filter.wcfg
+source tb_top.tcl
+run 10000 us
+close_sim

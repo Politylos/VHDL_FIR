@@ -1,0 +1,163 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov  1 08:13:02 2021
+# Process ID: 36052
+# Current directory: C:/Users/polit/Downloads/06_demo_all_2021
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15752 C:\Users\polit\Downloads\06_demo_all_2021\06_demo_all.xpr
+# Log file: C:/Users/polit/Downloads/06_demo_all_2021/vivado.log
+# Journal file: C:/Users/polit/Downloads/06_demo_all_2021\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 1136.328 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/synth_1
+
+reset_run mem_oled_char_lib_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/mem_oled_char_lib_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mem_oled_char_lib'...
+[Mon Nov  1 08:44:04 2021] Launched mem_oled_char_lib_synth_1, synth_1...
+Run output will be captured here:
+mem_oled_char_lib_synth_1: C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/mem_oled_char_lib_synth_1/runme.log
+synth_1: C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/synth_1/runme.log
+[Mon Nov  1 08:44:04 2021] Launched impl_1...
+Run output will be captured here: C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Nov  1 08:46:41 2021] Launched synth_1...
+Run output will be captured here: C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/synth_1/runme.log
+[Mon Nov  1 08:46:41 2021] Launched impl_1...
+Run output will be captured here: C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1318.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 350 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.389 . Memory (MB): peak = 2002.094 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.391 . Memory (MB): peak = 2002.094 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2002.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2177.211 ; gain = 1040.883
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fir_test'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fir_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/mem_oled_char_lib.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/charLib.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/i_file_001.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/xadc_in.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fir_test_vlog.prj"
+"xvhdl --incr --relax -prj fir_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/src/my_FIR_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'my_FIR_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.srcs/sim_1/new/fir_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fir_test'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+"xelab -wto e6a4e5df04c94149963ef0c159be1529 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fir_test_behav xil_defaultlib.fir_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto e6a4e5df04c94149963ef0c159be1529 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fir_test_behav xil_defaultlib.fir_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behav of entity xil_defaultlib.my_FIR_filter [my_fir_filter_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_test
+Built simulation snapshot fir_test_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/xsim.dir/fir_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim/xsim.dir/fir_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov  1 08:50:11 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov  1 08:50:11 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2177.211 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fir_test_behav -key {Behavioral:sim_1:Functional:fir_test} -tclbatch {fir_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fir_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2213.598 ; gain = 36.387
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fir_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 2213.598 ; gain = 36.387
+run 1 us
+run 1 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Nov  1 10:00:00 2021] Launched synth_1...
+Run output will be captured here: C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/synth_1/runme.log
+[Mon Nov  1 10:00:00 2021] Launched impl_1...
+Run output will be captured here: C:/Users/polit/Downloads/06_demo_all_2021/06_demo_all.runs/impl_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Sep  5 00:12:56 2021
+# Process ID: 4004
+# Current directory: D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021/06_demo_all.runs/clk_wiz_0_synth_1
+# Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021/06_demo_all.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: D:/FPGA_2021/2021_code_base/06_demo_all_2021/06_demo_all_2021/06_demo_all.runs/clk_wiz_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace
